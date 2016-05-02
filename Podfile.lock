@@ -1,0 +1,10 @@
+PODS:
+  - notificare-push-lib (1.8.0)
+
+DEPENDENCIES:
+  - notificare-push-lib (~> 1.8.0)
+
+SPEC CHECKSUMS:
+  notificare-push-lib: bc999e407e6887b5eeb66382dc72a03943e9eb98
+
+COCOAPODS: 0.39.0
