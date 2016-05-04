@@ -14,6 +14,10 @@
 		EEC5DB161CD7EED700705D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC5DB141CD7EED700705D4E /* Main.storyboard */; };
 		EEC5DB181CD7EED700705D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC5DB171CD7EED700705D4E /* Assets.xcassets */; };
 		EEC5DB1B1CD7EED700705D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC5DB191CD7EED700705D4E /* LaunchScreen.storyboard */; };
+		EED4F0DA1CD97BCB0054D4DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED4F0D91CD97BCB0054D4DC /* CoreLocation.framework */; };
+		EEF9C80C1CD96B6A0080528E /* DefaultTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEF9C8091CD96B6A0080528E /* DefaultTheme.bundle */; };
+		EEF9C80D1CD96B6A0080528E /* Notificare.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEF9C80A1CD96B6A0080528E /* Notificare.plist */; };
+		EEF9C80E1CD96B6A0080528E /* NotificareTags.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEF9C80B1CD96B6A0080528E /* NotificareTags.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		EEC5DB171CD7EED700705D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC5DB1A1CD7EED700705D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEC5DB1C1CD7EED700705D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED4F0D91CD97BCB0054D4DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EEF9C8091CD96B6A0080528E /* DefaultTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DefaultTheme.bundle; sourceTree = "<group>"; };
+		EEF9C80A1CD96B6A0080528E /* Notificare.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Notificare.plist; sourceTree = "<group>"; };
+		EEF9C80B1CD96B6A0080528E /* NotificareTags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NotificareTags.plist; sourceTree = "<group>"; };
 		FCAD11A9DBD542A89664B335 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED4F0DA1CD97BCB0054D4DC /* CoreLocation.framework in Frameworks */,
 				AC6C1F8AAACEFBF7779C8364 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +56,7 @@
 		3D0C74E6D80AC6201C7FCBAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EED4F0D91CD97BCB0054D4DC /* CoreLocation.framework */,
 				55987AF43D7F7963D63A6F84 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -82,14 +92,10 @@
 		EEC5DB0A1CD7EED700705D4E /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				EEF9C8041CD9697A0080528E /* Views */,
+				EEF9C8031CD969680080528E /* Controllers */,
 				EEC5DB0E1CD7EED700705D4E /* AppDelegate.h */,
 				EEC5DB0F1CD7EED700705D4E /* AppDelegate.m */,
-				EEC5DB111CD7EED700705D4E /* ViewController.h */,
-				EEC5DB121CD7EED700705D4E /* ViewController.m */,
-				EEC5DB141CD7EED700705D4E /* Main.storyboard */,
-				EEC5DB171CD7EED700705D4E /* Assets.xcassets */,
-				EEC5DB191CD7EED700705D4E /* LaunchScreen.storyboard */,
-				EEC5DB1C1CD7EED700705D4E /* Info.plist */,
 				EEC5DB0B1CD7EED700705D4E /* Supporting Files */,
 			);
 			path = Mapper;
@@ -98,9 +104,32 @@
 		EEC5DB0B1CD7EED700705D4E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEC5DB171CD7EED700705D4E /* Assets.xcassets */,
+				EEC5DB1C1CD7EED700705D4E /* Info.plist */,
 				EEC5DB0C1CD7EED700705D4E /* main.m */,
+				EEF9C8091CD96B6A0080528E /* DefaultTheme.bundle */,
+				EEF9C80A1CD96B6A0080528E /* Notificare.plist */,
+				EEF9C80B1CD96B6A0080528E /* NotificareTags.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEF9C8031CD969680080528E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC5DB111CD7EED700705D4E /* ViewController.h */,
+				EEC5DB121CD7EED700705D4E /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EEF9C8041CD9697A0080528E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEC5DB191CD7EED700705D4E /* LaunchScreen.storyboard */,
+				EEC5DB141CD7EED700705D4E /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +144,7 @@
 				EEC5DB051CD7EED700705D4E /* Frameworks */,
 				EEC5DB061CD7EED700705D4E /* Resources */,
 				69CC0AFE6B21DC31EFB0FAFC /* Copy Pods Resources */,
+				7F836B1B43D412BBEB4355FD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,9 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF9C80D1CD96B6A0080528E /* Notificare.plist in Resources */,
+				EEF9C80E1CD96B6A0080528E /* NotificareTags.plist in Resources */,
 				EEC5DB1B1CD7EED700705D4E /* LaunchScreen.storyboard in Resources */,
 				EEC5DB181CD7EED700705D4E /* Assets.xcassets in Resources */,
 				EEC5DB161CD7EED700705D4E /* Main.storyboard in Resources */,
+				EEF9C80C1CD96B6A0080528E /* DefaultTheme.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +233,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F836B1B43D412BBEB4355FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
